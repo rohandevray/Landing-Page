@@ -8,33 +8,37 @@
 <meta name="HandheldFriendly" content="true">
 <link rel="stylesheet" href="input.scss">
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section>
+   <div class="partX">
       <div class="circle1"></div>
-        <div class="heading">
-          <div class="logo">
-            <img src="image.jpg" alt="" class="iconX">
-          </div>
-          <div class="list">
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#secondpage">Create Team</a></li>
-                <li><a href="">Calender</a></li>
-                <li><a href="#contact-page">Contact</a></li>
-              </ul>
-          </div>
-             </div>
-      
+      <header>
+        <nav>
+            <div class="logo"> <img src="image.jpg" alt="" class="iconX"></div>
+           
+                <ul class="nav-links">
+                    <li><a href="#page1">Home</a></li>
+                    <li><a href="#page2">Create Team</a></li>
+                    <li><a href="#">Calender</a></li>
+                    <li><a href="#page3">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        
+        </nav>
 
-       <div class="content">
+</header>
+       <div class="content" id="page1">
          <div class="textbox">
           <h3>Welcome here!</h3>
-                <h1>It's <span class="totle">Impresario</span>  </h1>
-               
+                <h1>It's <span class="totle">Impresario</span></h1>
                 <p>Hope you're doing well!! We present to you Impresario, your go-to appilication to keep track of your events  and   your organisations. You can create an organisation with  any no. of users you want. You along with  other  members can create a sub org which will be a child of the org that you have created.</p>
           <button class="pad">Learn More</button>
          </div>
@@ -120,12 +124,12 @@
 
     
      <!-- page 2 -->
-     <section class="page2" id="secondpage">
+   <section class="page2" id="page2">
       <div class="containerall">
         <div class="container">
             <div class="card">
                 <div class="info">
-                    <h1 class="title">CREATE <span class="head">TEAM</span></h1>
+                   <h1 class="title">CREAT<span class="one">E</span> <span class="head">TEAM</span></h1>
                     <div class="sizes">
                         <form class="" action="index.html" method="post">
                           <div class="icon ico1">
@@ -153,14 +157,14 @@
 
      </section>
      
-     <section id="contact-page">
+  <section id="contact-page page3">
       
           <div class="card-card">
               <div class="info-area">
                      <h2>Let's get in touch</h2>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed dui vestibulu esque sed dui </p>
                       <div class="three-icons">
-                             <div class="econ">
+                             <div class="econ  econ1">
                               <i class="fas fa-envelope fa-2x"></i>
                               <p>lorel@ipsum.com</p>
                              </div>
@@ -212,6 +216,9 @@
                  </label>  <!-- //we have to add label to input name // -->
             </div>
                     <button type="submit" id="send">Send</button>
+                 <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
               </div>
           </div>
           <div class="outer">
