@@ -24,6 +24,11 @@ section{
     
 
 }
+.partX{
+  width: 100%;
+  height: 100vh;
+
+}
 .list{
     position: relative;
     left: 52%;
@@ -108,7 +113,7 @@ button:hover {
     background-color: #00bfa6;
   }
   /* icons */
-  .icon1{
+   .icon1{
     top: 25%;
     right: 6.5%;
     position: absolute;
@@ -117,21 +122,22 @@ button:hover {
     color: #fff;
   }
   .icon2{
-    top: 31%;
+    top: 32.7%;
     right: 6.5%;
     position: absolute;
-    transform: translate(-6.5%,-31%);
+    transform: translate(-6.5%,-32.7%);
     cursor: pointer;
     color:#fff;
 }
 .icon3{
-    top: 37%;
+    top: 40.4%;
     right: 6.5%;
     position: absolute;
-    transform: translate(-6.5%,-37%);
+    transform: translate(-6.5%,-40.4%);
     cursor: pointer;
     color: #fff;
 }
+
 
 .circle1{
     position: absolute;
@@ -651,3 +657,121 @@ button:hover {
   margin: 2rem 0;
 }
 
+/* new additions */
+
+/* nav bars */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  padding-top: 0.5%;
+}
+
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+
+.nav-links li{
+  list-style-type: none;
+}
+.nav-links a{
+  color:rgb(129, 255, 223);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* we make the hamburger go away in desktop view .We only want it in mobile view */
+.burger{
+  display: none;
+}
+
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* breakpoints */
+
+@media screen and (max-width:768px){
+  body{
+      overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .burger{
+      display: block;
+      cursor: pointer;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+
+}
+
+@media screen and (max-width:1064px){
+  .nav-links{
+      width:60%;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+/* creating our animation */
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+
+
+}
+
+.toggle .line1{
+     transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+.partX{
+  width: 100%;
+  height: 100vh;
+
+}
+
+/* nav bars */
